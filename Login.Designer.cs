@@ -35,6 +35,7 @@ namespace Projekat_2026_Nebojsa_Matic
             this.txtemail = new System.Windows.Forms.TextBox();
             this.txtlozinka = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.buttonregistracija = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -92,12 +93,23 @@ namespace Projekat_2026_Nebojsa_Matic
             this.label3.TabIndex = 5;
             this.label3.Text = "Dobrodosli!";
             // 
+            // buttonregistracija
+            // 
+            this.buttonregistracija.Location = new System.Drawing.Point(687, 215);
+            this.buttonregistracija.Name = "buttonregistracija";
+            this.buttonregistracija.Size = new System.Drawing.Size(172, 39);
+            this.buttonregistracija.TabIndex = 6;
+            this.buttonregistracija.Text = "REGISTRACIJA";
+            this.buttonregistracija.UseVisualStyleBackColor = true;
+            this.buttonregistracija.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
             this.ClientSize = new System.Drawing.Size(896, 412);
+            this.Controls.Add(this.buttonregistracija);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtlozinka);
             this.Controls.Add(this.txtemail);
@@ -120,6 +132,7 @@ namespace Projekat_2026_Nebojsa_Matic
         private System.Windows.Forms.TextBox txtemail;
         private System.Windows.Forms.TextBox txtlozinka;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button buttonregistracija;
     }
 }
 

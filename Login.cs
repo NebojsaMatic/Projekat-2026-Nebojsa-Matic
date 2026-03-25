@@ -63,5 +63,10 @@ namespace Projekat_2026_Nebojsa_Matic
                 }
             }
         }
+
+        private void buttonregistracija_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
