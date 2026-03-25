@@ -34,6 +34,7 @@ namespace Projekat_2026_Nebojsa_Matic
             this.btnlogin = new System.Windows.Forms.Button();
             this.txtemail = new System.Windows.Forms.TextBox();
             this.txtlozinka = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -80,11 +81,24 @@ namespace Projekat_2026_Nebojsa_Matic
             this.txtlozinka.Size = new System.Drawing.Size(200, 22);
             this.txtlozinka.TabIndex = 4;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(362, 43);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(174, 33);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Dobrodosli!";
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1014, 546);
+            this.BackColor = System.Drawing.Color.Maroon;
+            this.ClientSize = new System.Drawing.Size(896, 412);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.txtlozinka);
             this.Controls.Add(this.txtemail);
             this.Controls.Add(this.btnlogin);
@@ -105,6 +119,7 @@ namespace Projekat_2026_Nebojsa_Matic
         private System.Windows.Forms.Button btnlogin;
         private System.Windows.Forms.TextBox txtemail;
         private System.Windows.Forms.TextBox txtlozinka;
+        private System.Windows.Forms.Label label3;
     }
 }
 
