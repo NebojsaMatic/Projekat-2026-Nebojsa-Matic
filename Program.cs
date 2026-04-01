@@ -6,8 +6,9 @@ using System.Windows.Forms;
 
 namespace Projekat_2026_Nebojsa_Matic
 {
-    static class Program
+    internal static class Program
     {
+        static public string user;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

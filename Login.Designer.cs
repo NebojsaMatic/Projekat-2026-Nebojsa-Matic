@@ -36,6 +36,7 @@ namespace Projekat_2026_Nebojsa_Matic
             this.txtlozinka = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.buttonregistracija = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -101,7 +102,18 @@ namespace Projekat_2026_Nebojsa_Matic
             this.buttonregistracija.TabIndex = 6;
             this.buttonregistracija.Text = "REGISTRACIJA";
             this.buttonregistracija.UseVisualStyleBackColor = true;
-            this.buttonregistracija.Click += new System.EventHandler(this.button1_Click);
+            this.buttonregistracija.Click += new System.EventHandler(this.buttonregistracija_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(117, 232);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 7;
+            this.comboBox1.Items.AddRange(new object[] {
+            "skola",
+            "kuca"});
             // 
             // Login
             // 
@@ -109,6 +121,7 @@ namespace Projekat_2026_Nebojsa_Matic
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
             this.ClientSize = new System.Drawing.Size(896, 412);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.buttonregistracija);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtlozinka);
@@ -133,6 +146,7 @@ namespace Projekat_2026_Nebojsa_Matic
         private System.Windows.Forms.TextBox txtlozinka;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button buttonregistracija;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 

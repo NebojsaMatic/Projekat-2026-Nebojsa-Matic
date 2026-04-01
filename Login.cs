@@ -21,6 +21,7 @@ namespace Projekat_2026_Nebojsa_Matic
         private void Form1_Load(object sender, EventArgs e)
         {
             // Nebojsa Matic
+            comboBox1.SelectedIndex = 0;
         }
 
         private void btnlogin_Click(object sender, EventArgs e)
@@ -31,7 +32,8 @@ namespace Projekat_2026_Nebojsa_Matic
             }
             else
             {
-                SqlConnection veza = Konekcija.Connect();
+                string lokacija = comboBox1.SelectedItem.ToString();
+                SqlConnection veza = Konekcija.Connect(lokacija);
                 DataTable podaci = new DataTable();
                 SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM korisnik WHERE email='" + txtemail.Text + "'", veza);
                 adapter.Fill(podaci);
@@ -66,7 +68,9 @@ namespace Projekat_2026_Nebojsa_Matic
 
         private void buttonregistracija_Click(object sender, EventArgs e)
         {
-
+            Program.user = comboBox1.SelectedItem.ToString();
+            Registracija nova = new Registracija();
+            nova.Show();
         }
     }
 }
