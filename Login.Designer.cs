@@ -107,19 +107,19 @@ namespace Projekat_2026_Nebojsa_Matic
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "skola",
+            "kuca"});
             this.comboBox1.Location = new System.Drawing.Point(117, 232);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 7;
-            this.comboBox1.Items.AddRange(new object[] {
-            "skola",
-            "kuca"});
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Maroon;
+            this.BackColor = System.Drawing.Color.Chartreuse;
             this.ClientSize = new System.Drawing.Size(896, 412);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.buttonregistracija);
