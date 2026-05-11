@@ -30,17 +30,25 @@ namespace Projekat_2026_Nebojsa_Matic
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.dokumentacijaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.podaciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ligeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kluboviToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menadzeriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.igraciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mecevToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.izvestajiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timIgracToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timMenadzerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mecToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administracijaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.korisniciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dogadjajiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dokumentacijaToolStripMenuItem,
             this.podaciToolStripMenuItem,
             this.izvestajiToolStripMenuItem,
             this.administracijaToolStripMenuItem});
@@ -50,35 +58,102 @@ namespace Projekat_2026_Nebojsa_Matic
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // dokumentacijaToolStripMenuItem
-            // 
-            this.dokumentacijaToolStripMenuItem.Name = "dokumentacijaToolStripMenuItem";
-            this.dokumentacijaToolStripMenuItem.Size = new System.Drawing.Size(99, 20);
-            this.dokumentacijaToolStripMenuItem.Text = "Dokumentacija";
-            // 
             // podaciToolStripMenuItem
             // 
+            this.podaciToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ligeToolStripMenuItem,
+            this.kluboviToolStripMenuItem,
+            this.menadzeriToolStripMenuItem,
+            this.igraciToolStripMenuItem,
+            this.mecevToolStripMenuItem,
+            this.dogadjajiToolStripMenuItem});
             this.podaciToolStripMenuItem.Name = "podaciToolStripMenuItem";
             this.podaciToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.podaciToolStripMenuItem.Text = "Podaci";
             // 
+            // ligeToolStripMenuItem
+            // 
+            this.ligeToolStripMenuItem.Name = "ligeToolStripMenuItem";
+            this.ligeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ligeToolStripMenuItem.Text = "Lige";
+            // 
+            // kluboviToolStripMenuItem
+            // 
+            this.kluboviToolStripMenuItem.Name = "kluboviToolStripMenuItem";
+            this.kluboviToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.kluboviToolStripMenuItem.Text = "Klubovi";
+            // 
+            // menadzeriToolStripMenuItem
+            // 
+            this.menadzeriToolStripMenuItem.Name = "menadzeriToolStripMenuItem";
+            this.menadzeriToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.menadzeriToolStripMenuItem.Text = "Menadzeri";
+            // 
+            // igraciToolStripMenuItem
+            // 
+            this.igraciToolStripMenuItem.Name = "igraciToolStripMenuItem";
+            this.igraciToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.igraciToolStripMenuItem.Text = "Igraci";
+            // 
+            // mecevToolStripMenuItem
+            // 
+            this.mecevToolStripMenuItem.Name = "mecevToolStripMenuItem";
+            this.mecevToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mecevToolStripMenuItem.Text = "Mecevi";
+            // 
             // izvestajiToolStripMenuItem
             // 
+            this.izvestajiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.timIgracToolStripMenuItem,
+            this.timMenadzerToolStripMenuItem,
+            this.mecToolStripMenuItem});
             this.izvestajiToolStripMenuItem.Name = "izvestajiToolStripMenuItem";
-            this.izvestajiToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
-            this.izvestajiToolStripMenuItem.Text = "Izvestaji";
+            this.izvestajiToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
+            this.izvestajiToolStripMenuItem.Text = "Vezne tabele";
+            // 
+            // timIgracToolStripMenuItem
+            // 
+            this.timIgracToolStripMenuItem.Name = "timIgracToolStripMenuItem";
+            this.timIgracToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.timIgracToolStripMenuItem.Text = "Tim - Igrac";
+            // 
+            // timMenadzerToolStripMenuItem
+            // 
+            this.timMenadzerToolStripMenuItem.Name = "timMenadzerToolStripMenuItem";
+            this.timMenadzerToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.timMenadzerToolStripMenuItem.Text = "Tim - Menadzer";
+            // 
+            // mecToolStripMenuItem
+            // 
+            this.mecToolStripMenuItem.Name = "mecToolStripMenuItem";
+            this.mecToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.mecToolStripMenuItem.Text = "Mec - Dogadjaj";
             // 
             // administracijaToolStripMenuItem
             // 
+            this.administracijaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.korisniciToolStripMenuItem});
             this.administracijaToolStripMenuItem.Name = "administracijaToolStripMenuItem";
             this.administracijaToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
             this.administracijaToolStripMenuItem.Text = "Administracija";
+            // 
+            // korisniciToolStripMenuItem
+            // 
+            this.korisniciToolStripMenuItem.Name = "korisniciToolStripMenuItem";
+            this.korisniciToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.korisniciToolStripMenuItem.Text = "Korisnici";
+            // 
+            // dogadjajiToolStripMenuItem
+            // 
+            this.dogadjajiToolStripMenuItem.Name = "dogadjajiToolStripMenuItem";
+            this.dogadjajiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dogadjajiToolStripMenuItem.Text = "Dogadjaji";
             // 
             // Glavna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Maroon;
+            this.BackColor = System.Drawing.Color.Ivory;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -95,9 +170,18 @@ namespace Projekat_2026_Nebojsa_Matic
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem dokumentacijaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem podaciToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem izvestajiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administracijaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ligeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem kluboviToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menadzeriToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem igraciToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem timIgracToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem timMenadzerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mecToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem korisniciToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mecevToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dogadjajiToolStripMenuItem;
     }
 }
