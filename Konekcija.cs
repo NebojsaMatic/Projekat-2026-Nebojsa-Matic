@@ -11,10 +11,10 @@ namespace Projekat_2026_Nebojsa_Matic
 {
     internal class Konekcija
     {
-        static public SqlConnection Connect(string gde)
+        static public SqlConnection Connect()
         {
             string CS;
-            CS = ConfigurationManager.ConnectionStrings[gde].ConnectionString;
+            CS = ConfigurationManager.ConnectionStrings[Program.user].ConnectionString;
             return new SqlConnection(CS);
         }
     }

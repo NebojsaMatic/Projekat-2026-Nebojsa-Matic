@@ -34,12 +34,12 @@ namespace Projekat_2026_Nebojsa_Matic
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtLozinka = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtPotvrdiLozinku = new System.Windows.Forms.TextBox();
+            this.btnRegistruj = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -83,19 +83,19 @@ namespace Projekat_2026_Nebojsa_Matic
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 4;
             // 
-            // textBox3
+            // txtEmail
             // 
-            this.textBox3.Location = new System.Drawing.Point(254, 168);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 5;
+            this.txtEmail.Location = new System.Drawing.Point(254, 168);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(100, 20);
+            this.txtEmail.TabIndex = 5;
             // 
-            // textBox4
+            // txtLozinka
             // 
-            this.textBox4.Location = new System.Drawing.Point(254, 215);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 6;
+            this.txtLozinka.Location = new System.Drawing.Point(254, 215);
+            this.txtLozinka.Name = "txtLozinka";
+            this.txtLozinka.Size = new System.Drawing.Size(100, 20);
+            this.txtLozinka.TabIndex = 6;
             // 
             // label4
             // 
@@ -115,22 +115,22 @@ namespace Projekat_2026_Nebojsa_Matic
             this.label5.TabIndex = 8;
             this.label5.Text = "Potvrdi lozinku";
             // 
-            // textBox5
+            // txtPotvrdiLozinku
             // 
-            this.textBox5.Location = new System.Drawing.Point(254, 261);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 9;
+            this.txtPotvrdiLozinku.Location = new System.Drawing.Point(254, 261);
+            this.txtPotvrdiLozinku.Name = "txtPotvrdiLozinku";
+            this.txtPotvrdiLozinku.Size = new System.Drawing.Size(100, 20);
+            this.txtPotvrdiLozinku.TabIndex = 9;
             // 
-            // button1
+            // btnRegistruj
             // 
-            this.button1.Location = new System.Drawing.Point(254, 329);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 30);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Registruj";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnRegistruj.Location = new System.Drawing.Point(254, 329);
+            this.btnRegistruj.Name = "btnRegistruj";
+            this.btnRegistruj.Size = new System.Drawing.Size(100, 30);
+            this.btnRegistruj.TabIndex = 10;
+            this.btnRegistruj.Text = "Registruj";
+            this.btnRegistruj.UseVisualStyleBackColor = true;
+            this.btnRegistruj.Click += new System.EventHandler(this.btnRegistruj_Click);
             // 
             // Registracija
             // 
@@ -138,12 +138,12 @@ namespace Projekat_2026_Nebojsa_Matic
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Ivory;
             this.ClientSize = new System.Drawing.Size(438, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.btnRegistruj);
+            this.Controls.Add(this.txtPotvrdiLozinku);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtLozinka);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
@@ -163,11 +163,11 @@ namespace Projekat_2026_Nebojsa_Matic
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtLozinka;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtPotvrdiLozinku;
+        private System.Windows.Forms.Button btnRegistruj;
     }
 }

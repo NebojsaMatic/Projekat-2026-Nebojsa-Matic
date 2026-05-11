@@ -18,37 +18,42 @@ namespace Projekat_2026_Nebojsa_Matic
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnRegistruj_Click(object sender, EventArgs e)
         {
-            string baza = Program.user;
-            if (textBox4.Text == textBox5.Text)
+            if (txtEmail.Text == "" || txtLozinka.Text == "" || txtPotvrdiLozinku.Text == "")
             {
-                SqlConnection veza = Konekcija.Connect(baza);
-                string provera = "SELECT COUNT(*) FROM korisnik WHERE email='" + textBox3.Text + "'";
-                SqlCommand komanda = new SqlCommand(provera, veza);
-                veza.Open();
-                int ima = (int)  komanda.ExecuteScalar();
-                veza.Close();
-                if (ima > 0)
-                {
-                    MessageBox.Show("Ima takav email.");
-                }
-                else
-                {
-                    string naredba = "INSERT INTO korisnik VALUES('";
-                    naredba += textBox3.Text + "','";
-                    naredba += textBox4.Text + "', 0)";
-                    veza.Open();
-                    SqlCommand uradi = new SqlCommand(naredba, veza);
-                    uradi.ExecuteNonQuery();
-                    veza.Close();
-                    MessageBox.Show("Uradio sam");
-                }
+                MessageBox.Show("Data polja su obavezna.");
+                return;
             }
-            else
+
+            if (txtLozinka.Text != txtPotvrdiLozinku.Text)
             {
-                MessageBox.Show("Ponovljena lozinka nije dobra");
+                MessageBox.Show("Lozinke se ne poklapaju.");
+                return;
             }
+
+            SqlConnection veza = Konekcija.Connect();
+            string provera = "SELECT COUNT(*) FROM Korisnik WHERE email='" + txtEmail.Text + "'";
+            SqlCommand komanda = new SqlCommand(provera, veza);
+            veza.Open();
+            int ima = (int)komanda.ExecuteScalar();
+            veza.Close();
+
+            if (ima > 0)
+            {
+                MessageBox.Show("Korisnik sa tim emailom vec postoji.");
+                return;
+            }
+
+            string naredba = "INSERT INTO Korisnik(email, loz, uloga) VALUES('" +
+                txtEmail.Text + "', '" + txtLozinka.Text + "', 0)";
+            SqlCommand dodaj = new SqlCommand(naredba, veza);
+            veza.Open();
+            dodaj.ExecuteNonQuery();
+            veza.Close();
+
+            MessageBox.Show("Registracija uspesna! Mozete se prijaviti.");
+            this.Close();
         }
     }
 }
