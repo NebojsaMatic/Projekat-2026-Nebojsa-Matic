@@ -35,14 +35,14 @@ namespace Projekat_2026_Nebojsa_Matic
             this.kluboviToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menadzeriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.igraciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mecevToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.meceviToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dogadjajiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.izvestajiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timIgracToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timMenadzerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mecToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mecDogadjajToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administracijaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.korisniciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dogadjajiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,7 +65,7 @@ namespace Projekat_2026_Nebojsa_Matic
             this.kluboviToolStripMenuItem,
             this.menadzeriToolStripMenuItem,
             this.igraciToolStripMenuItem,
-            this.mecevToolStripMenuItem,
+            this.meceviToolStripMenuItem,
             this.dogadjajiToolStripMenuItem});
             this.podaciToolStripMenuItem.Name = "podaciToolStripMenuItem";
             this.podaciToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
@@ -74,39 +74,51 @@ namespace Projekat_2026_Nebojsa_Matic
             // ligeToolStripMenuItem
             // 
             this.ligeToolStripMenuItem.Name = "ligeToolStripMenuItem";
-            this.ligeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ligeToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.ligeToolStripMenuItem.Text = "Lige";
+            this.ligeToolStripMenuItem.Click += new System.EventHandler(this.ligeToolStripMenuItem_Click);
             // 
             // kluboviToolStripMenuItem
             // 
             this.kluboviToolStripMenuItem.Name = "kluboviToolStripMenuItem";
-            this.kluboviToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.kluboviToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.kluboviToolStripMenuItem.Text = "Klubovi";
+            this.kluboviToolStripMenuItem.Click += new System.EventHandler(this.kluboviToolStripMenuItem_Click);
             // 
             // menadzeriToolStripMenuItem
             // 
             this.menadzeriToolStripMenuItem.Name = "menadzeriToolStripMenuItem";
-            this.menadzeriToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.menadzeriToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.menadzeriToolStripMenuItem.Text = "Menadzeri";
+            this.menadzeriToolStripMenuItem.Click += new System.EventHandler(this.menadzeriToolStripMenuItem_Click);
             // 
             // igraciToolStripMenuItem
             // 
             this.igraciToolStripMenuItem.Name = "igraciToolStripMenuItem";
-            this.igraciToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.igraciToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.igraciToolStripMenuItem.Text = "Igraci";
+            this.igraciToolStripMenuItem.Click += new System.EventHandler(this.igraciToolStripMenuItem_Click);
             // 
-            // mecevToolStripMenuItem
+            // meceviToolStripMenuItem
             // 
-            this.mecevToolStripMenuItem.Name = "mecevToolStripMenuItem";
-            this.mecevToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.mecevToolStripMenuItem.Text = "Mecevi";
+            this.meceviToolStripMenuItem.Name = "meceviToolStripMenuItem";
+            this.meceviToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.meceviToolStripMenuItem.Text = "Mecevi";
+            this.meceviToolStripMenuItem.Click += new System.EventHandler(this.meceviToolStripMenuItem_Click);
+            // 
+            // dogadjajiToolStripMenuItem
+            // 
+            this.dogadjajiToolStripMenuItem.Name = "dogadjajiToolStripMenuItem";
+            this.dogadjajiToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.dogadjajiToolStripMenuItem.Text = "Dogadjaji";
+            this.dogadjajiToolStripMenuItem.Click += new System.EventHandler(this.dogadjajiToolStripMenuItem_Click);
             // 
             // izvestajiToolStripMenuItem
             // 
             this.izvestajiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.timIgracToolStripMenuItem,
             this.timMenadzerToolStripMenuItem,
-            this.mecToolStripMenuItem});
+            this.mecDogadjajToolStripMenuItem});
             this.izvestajiToolStripMenuItem.Name = "izvestajiToolStripMenuItem";
             this.izvestajiToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
             this.izvestajiToolStripMenuItem.Text = "Vezne tabele";
@@ -114,20 +126,23 @@ namespace Projekat_2026_Nebojsa_Matic
             // timIgracToolStripMenuItem
             // 
             this.timIgracToolStripMenuItem.Name = "timIgracToolStripMenuItem";
-            this.timIgracToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.timIgracToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.timIgracToolStripMenuItem.Text = "Tim - Igrac";
+            this.timIgracToolStripMenuItem.Click += new System.EventHandler(this.timIgracToolStripMenuItem_Click);
             // 
             // timMenadzerToolStripMenuItem
             // 
             this.timMenadzerToolStripMenuItem.Name = "timMenadzerToolStripMenuItem";
-            this.timMenadzerToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.timMenadzerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.timMenadzerToolStripMenuItem.Text = "Tim - Menadzer";
+            this.timMenadzerToolStripMenuItem.Click += new System.EventHandler(this.timMenadzerToolStripMenuItem_Click);
             // 
-            // mecToolStripMenuItem
+            // mecDogadjajToolStripMenuItem
             // 
-            this.mecToolStripMenuItem.Name = "mecToolStripMenuItem";
-            this.mecToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-            this.mecToolStripMenuItem.Text = "Mec - Dogadjaj";
+            this.mecDogadjajToolStripMenuItem.Name = "mecDogadjajToolStripMenuItem";
+            this.mecDogadjajToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mecDogadjajToolStripMenuItem.Text = "Mec - Dogadjaj";
+            this.mecDogadjajToolStripMenuItem.Click += new System.EventHandler(this.mecDogadjajToolStripMenuItem_Click);
             // 
             // administracijaToolStripMenuItem
             // 
@@ -142,28 +157,20 @@ namespace Projekat_2026_Nebojsa_Matic
             this.korisniciToolStripMenuItem.Name = "korisniciToolStripMenuItem";
             this.korisniciToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.korisniciToolStripMenuItem.Text = "Korisnici";
-            // 
-            // dogadjajiToolStripMenuItem
-            // 
-            this.dogadjajiToolStripMenuItem.Name = "dogadjajiToolStripMenuItem";
-            this.dogadjajiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.dogadjajiToolStripMenuItem.Text = "Dogadjaji";
+            this.korisniciToolStripMenuItem.Click += new System.EventHandler(this.korisniciToolStripMenuItem_Click);
             // 
             // Glavna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
             this.BackColor = System.Drawing.Color.Ivory;
-=======
-            this.BackColor = System.Drawing.Color.PowderBlue;
->>>>>>> 64f4b50976975856e7d9a1d3ef28ce9644d0b166
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Glavna";
             this.Text = "Glavna";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Glavna_FormClosed);
+            this.Load += new System.EventHandler(this.Glavna_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -183,9 +190,9 @@ namespace Projekat_2026_Nebojsa_Matic
         private System.Windows.Forms.ToolStripMenuItem igraciToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem timIgracToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem timMenadzerToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mecToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mecDogadjajToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem korisniciToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mecevToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem meceviToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dogadjajiToolStripMenuItem;
     }
 }

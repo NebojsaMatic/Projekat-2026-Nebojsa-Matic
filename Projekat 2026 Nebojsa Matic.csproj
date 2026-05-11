@@ -47,18 +47,66 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dogadjaji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dogadjaji.Designer.cs">
+      <DependentUpon>Dogadjaji.cs</DependentUpon>
+    </Compile>
     <Compile Include="Glavna.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Glavna.Designer.cs">
       <DependentUpon>Glavna.cs</DependentUpon>
     </Compile>
+    <Compile Include="Igraci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Igraci.Designer.cs">
+      <DependentUpon>Igraci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Klubovi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Klubovi.Designer.cs">
+      <DependentUpon>Klubovi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Konekcija.cs" />
+    <Compile Include="Korisnici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Korisnici.Designer.cs">
+      <DependentUpon>Korisnici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Liga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Liga.Designer.cs">
+      <DependentUpon>Liga.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MecDogadjaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MecDogadjaj.Designer.cs">
+      <DependentUpon>MecDogadjaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mecevi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mecevi.Designer.cs">
+      <DependentUpon>Mecevi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menadzeri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menadzeri.Designer.cs">
+      <DependentUpon>Menadzeri.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -68,11 +116,47 @@
     <Compile Include="Registracija.Designer.cs">
       <DependentUpon>Registracija.cs</DependentUpon>
     </Compile>
+    <Compile Include="TimIgrac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimIgrac.Designer.cs">
+      <DependentUpon>TimIgrac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimMenadzer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimMenadzer.Designer.cs">
+      <DependentUpon>TimMenadzer.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Dogadjaji.resx">
+      <DependentUpon>Dogadjaji.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Glavna.resx">
       <DependentUpon>Glavna.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Igraci.resx">
+      <DependentUpon>Igraci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Klubovi.resx">
+      <DependentUpon>Klubovi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Korisnici.resx">
+      <DependentUpon>Korisnici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Liga.resx">
+      <DependentUpon>Liga.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MecDogadjaj.resx">
+      <DependentUpon>MecDogadjaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mecevi.resx">
+      <DependentUpon>Mecevi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menadzeri.resx">
+      <DependentUpon>Menadzeri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -85,6 +169,12 @@
     </Compile>
     <EmbeddedResource Include="Registracija.resx">
       <DependentUpon>Registracija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimIgrac.resx">
+      <DependentUpon>TimIgrac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimMenadzer.resx">
+      <DependentUpon>TimMenadzer.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

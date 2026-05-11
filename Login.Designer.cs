@@ -42,7 +42,7 @@ namespace Projekat_2026_Nebojsa_Matic
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(281, 152);
+            this.label1.Location = new System.Drawing.Point(113, 149);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(32, 13);
             this.label1.TabIndex = 0;
@@ -51,7 +51,7 @@ namespace Projekat_2026_Nebojsa_Matic
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(281, 181);
+            this.label2.Location = new System.Drawing.Point(113, 178);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 1;
@@ -59,7 +59,7 @@ namespace Projekat_2026_Nebojsa_Matic
             // 
             // btnlogin
             // 
-            this.btnlogin.Location = new System.Drawing.Point(374, 215);
+            this.btnlogin.Location = new System.Drawing.Point(217, 203);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(153, 39);
             this.btnlogin.TabIndex = 2;
@@ -69,7 +69,7 @@ namespace Projekat_2026_Nebojsa_Matic
             // 
             // txtemail
             // 
-            this.txtemail.Location = new System.Drawing.Point(354, 149);
+            this.txtemail.Location = new System.Drawing.Point(190, 139);
             this.txtemail.Multiline = true;
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(200, 23);
@@ -77,7 +77,7 @@ namespace Projekat_2026_Nebojsa_Matic
             // 
             // txtlozinka
             // 
-            this.txtlozinka.Location = new System.Drawing.Point(354, 178);
+            this.txtlozinka.Location = new System.Drawing.Point(190, 175);
             this.txtlozinka.Multiline = true;
             this.txtlozinka.Name = "txtlozinka";
             this.txtlozinka.Size = new System.Drawing.Size(200, 22);
@@ -88,7 +88,7 @@ namespace Projekat_2026_Nebojsa_Matic
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(362, 43);
+            this.label3.Location = new System.Drawing.Point(196, 43);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(174, 33);
             this.label3.TabIndex = 5;
@@ -96,9 +96,9 @@ namespace Projekat_2026_Nebojsa_Matic
             // 
             // buttonregistracija
             // 
-            this.buttonregistracija.Location = new System.Drawing.Point(687, 215);
+            this.buttonregistracija.Location = new System.Drawing.Point(454, 37);
             this.buttonregistracija.Name = "buttonregistracija";
-            this.buttonregistracija.Size = new System.Drawing.Size(172, 39);
+            this.buttonregistracija.Size = new System.Drawing.Size(153, 39);
             this.buttonregistracija.TabIndex = 6;
             this.buttonregistracija.Text = "REGISTRACIJA";
             this.buttonregistracija.UseVisualStyleBackColor = true;
@@ -110,7 +110,7 @@ namespace Projekat_2026_Nebojsa_Matic
             this.comboBox1.Items.AddRange(new object[] {
             "skola",
             "kuca"});
-            this.comboBox1.Location = new System.Drawing.Point(117, 232);
+            this.comboBox1.Location = new System.Drawing.Point(230, 248);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 7;
@@ -119,12 +119,8 @@ namespace Projekat_2026_Nebojsa_Matic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
             this.BackColor = System.Drawing.Color.Ivory;
-=======
-            this.BackColor = System.Drawing.Color.PowderBlue;
->>>>>>> 64f4b50976975856e7d9a1d3ef28ce9644d0b166
-            this.ClientSize = new System.Drawing.Size(896, 412);
+            this.ClientSize = new System.Drawing.Size(619, 412);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.buttonregistracija);
             this.Controls.Add(this.label3);

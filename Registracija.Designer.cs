@@ -136,12 +136,8 @@ namespace Projekat_2026_Nebojsa_Matic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
             this.BackColor = System.Drawing.Color.Ivory;
-=======
-            this.BackColor = System.Drawing.Color.PowderBlue;
->>>>>>> 64f4b50976975856e7d9a1d3ef28ce9644d0b166
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(438, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label5);
